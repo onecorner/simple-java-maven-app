@@ -1,6 +1,11 @@
 node {
+    checkout scm
     stage('Build') {
-        echo 'Building....'
+        sh 'echo "Hello World"'
+        sh '''
+            echo "Multiline shell steps works too"
+            ls -lah
+           '''
     }
     stage('Test') {
         echo 'Building....'
