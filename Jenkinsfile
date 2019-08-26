@@ -3,6 +3,7 @@ node {
     stage('Build') {
         sh 'echo "Hello World"'
         sh '''
+            pwd
             echo "Multiline shell steps works too"
             ls -lah
            '''
